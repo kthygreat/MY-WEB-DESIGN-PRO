@@ -56,26 +56,52 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="max-w-6xl mx-auto p-8 mt-20">
-        <h2 className="text-3xl font-bold mb-6 text-center">Projects</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="card">
-            <img src="/images/portfolio.png" alt="React Portfolio" className="rounded mb-3" />
-            <h3 className="font-semibold text-lg">React Portfolio</h3>
-            <p className="text-sm">A responsive portfolio built with React + Tailwind CSS.</p>
-          </div>
-          <div className="card">
-            <img src="/images/soccer.png" alt="Soccer Prediction" className="rounded mb-3" />
-            <h3 className="font-semibold text-lg">Soccer Draw Predictor</h3>
-            <p className="text-sm">Python project analyzing soccer matches to predict draws.</p>
-          </div>
-          <div className="card">
-            <img src="/images/atm.png" alt="ATM App" className="rounded mb-3" />
-            <h3 className="font-semibold text-lg">Tap for ATM</h3>
-            <p className="text-sm">C# WinForms project simulating ATM tap workflows.</p>
-          </div>
-        </div>
-      </section>
+      <section id="projects" className="py-16 bg-gray-50">
+  <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
+  <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+    
+    {/* React Portfolio */}
+    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+      <img 
+        src="/src/assets/portfolio.png" 
+        alt="React Portfolio" 
+        className="w-full h-40 object-cover"
+      />
+      <div className="p-6">
+        <h3 className="text-xl font-semibold">React Portfolio</h3>
+        <p className="text-gray-600">A responsive portfolio built with React + Tailwind CSS.</p>
+      </div>
+    </div>
+
+    {/* Soccer Prediction */}
+    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+      <img 
+        src="/src/assets/soccer.png" 
+        alt="Soccer Prediction" 
+        className="w-full h-40 object-cover"
+      />
+      <div className="p-6">
+        <h3 className="text-xl font-semibold">Soccer Draw Predictor</h3>
+        <p className="text-gray-600">Python project analyzing soccer matches to predict draws.</p>
+      </div>
+    </div>
+
+    {/* ATM App */}
+    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+      <img 
+        src="/src/assets/atm.png" 
+        alt="ATM App" 
+        className="w-full h-40 object-cover"
+      />
+      <div className="p-6">
+        <h3 className="text-xl font-semibold">Tap for ATM</h3>
+        <p className="text-gray-600">C# WinForms project simulating ATM tap workflows.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
       {/* Services Section */}
       <section id="services" className="max-w-6xl mx-auto p-8 mt-20 bg-gray-100 rounded-lg">
@@ -145,3 +171,4 @@ function App() {
 }
 
 export default App;
+
